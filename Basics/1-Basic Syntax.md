@@ -70,7 +70,7 @@ public class GFG {
 
 ## 7. 标识符 Identifiers in Java
 
-> 在java中，标识符不仅包括局部变量local variables, 实例变量和静态变量instance and class variables, 以及标签labels；还包括类名，包名，模块名和方法名。
+> 在java中，标识符不仅包括局部变量local variables, 实例变量和静态变量instance and class variables, 以及标签labels；还包括类名，包名，模块名(如label)和方法名。
 >
 > 它们都遵循如下规则：
 > 1. 所有的标识符都必须以字母、美元符$或者下划线_开头。根据惯例约定，变量名小写字母开头

@@ -209,11 +209,11 @@ public class InstanceBlock {
 ```
 
 Output:
-> num is 10
-Instance Block
-num is 10
-Instance Block
-num is 50
+> num is 10  
+Instance Block  
+num is 10  
+Instance Block  
+num is 50  
 
 **Instance Block与构造器执行顺序:**
 > 以具有父类的子类为例：
@@ -250,9 +250,9 @@ class ParentClass {
 ```
 
 Output:
-> This is Parent Instance Block
-This is Parent Constructor
-This is Current Instance Block
+> This is Parent Instance Block  
+This is Parent Constructor  
+This is Current Instance Block  
 This is Current Constructor
 
 > 注：当调用构造器时，编译器会将Instance Block部分拷贝到构造器的super()语句之后，super()是默认是构造器的第一行语句，然后继续执行。因此Instance Block的执行顺序一定在构造器之前；而在进行子类构造之前须调用父类构造器，而父类Instance Block又在父类构造器前执行。
@@ -316,9 +316,9 @@ class SequenceTest {
 **执行添加-XX:+TraceClassLoading参数输出类加载信息**
 
 Output:
-> [Loaded basics.variable.SequenceOfExecution from file:/E:/JavaSEProjects/out/]
-Static Block
-Instance Block
+> [Loaded basics.variable.SequenceOfExecution from file:/E:/JavaSEProjects/out/]  
+Static Block  
+Instance Block  
 Constructor
 
 # Instance Variable Hiding
@@ -353,6 +353,6 @@ class ParentInstanceVariableHide {
 ```
 
 Output:
-> Value of local variable is 0.0
-Value of instance variable is c
+> Value of local variable is 0.0  
+Value of instance variable is c  
 Value of superclass instance variable is 10

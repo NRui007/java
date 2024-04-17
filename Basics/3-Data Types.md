@@ -79,7 +79,7 @@
             // 整数超出int范围的值，编译报错：过大的整数: 2147483648
             // 不能直接表示，需要将其转化为long
             // System.out.println(2147483648);
-            System.out.println(2147483648l);
+            System.out.println(2147483648L);
         }
     }
     ```
@@ -149,7 +149,7 @@
 
 #### 舍入误差 Rounding off errors
 
-> 多数程序数的存储长度最多为32位或者64位，而将无限小数表示为有效位数的小数则需要进行一个近似的表示，而做不到精确表示.
+> 多数程序数的存储长度最多为32位或者64位，而将无限小数表示为有效位数的小数则需要进行一个近似地表示，而做不到精确表示.  
 > 对于给定位数的小数，他们之间的运算也不能在如此位数中做到精确表示，因此他们的计算结果也往往会进行舍入.
 
 ```java
@@ -168,8 +168,8 @@ public class RoundErrors {
 }
 ```
 
-因为float和double都遵循IEEE 754浮点数表达规则，而0.1用IEEE 754规则表示为:
-$ 0.1 = (0.000110011001100110011001100110011001100110011001100110011001… )_2 $
+因为float和double都遵循IEEE 754浮点数表达规则，而0.1用IEEE 754规则表示为:  
+ **0.1 = (0.000110011001100110011001100110011001100110011001100110011001… )_2**  
 不能用有限的位数表示，计算出来的结果也就有了舍入误差
 
 **如何纠正舍入误差**
@@ -236,16 +236,16 @@ $ 0.1 = (0.000110011001100110011001100110011001100110011001100110011001… )_2 $
 > public class StringType {
 >   public static void main(String[] args) {
 >       // Declare String without using new operator 
->       String s = "GeeksforGeeks"; 
+>       String s = "GeeksForGeeks"; 
 >       // Declare String using new operator 
->       String s1 = new String("GeeksforGeeks"); 
+>       String s1 = new String("GeeksForGeeks"); 
 >   }
 > }
 > ```
 
 #### 2. Class
 
-> 类class是对象的蓝本或模板。
+> 类class是对象的蓝本或模板。  
 > 它的定义一般有如下几部分：
 > 1. Modifiers: class和interface只能被public和default修饰；只有**nested class和interface**可以用private和protected修饰
 > 2. ClassName: 类名需要符合标识符规则，且遵循**大驼峰**命名规则
@@ -255,7 +255,7 @@ $ 0.1 = (0.000110011001100110011001100110011001100110011001100110011001… )_2 $
 
 #### 3. Object
 
-> 对象Object是OOP的基本单元，代表着实际实体
+> 对象Object是OOP的基本单元，代表着实际实体  
 > 它包含以下部分:
 > 1. State: 它是对象的属性Properties
 > 2. Behavior: 对象的方法Methods
@@ -276,14 +276,14 @@ $ 0.1 = (0.000110011001100110011001100110011001100110011001100110011001… )_2 $
 > - 数组中变量在内存中地址连续分配，下标**从0开始**
 > - 数组大小初始化时必须指定好，不能过长或过短
 > - Array是Object的子类
-> - Array实现了Cloneable和Serialiable接口
+> - Array实现了Cloneable和Serializable接口
 
 # Comparison
 
-| **Properties** | **Primitive data types** | **Object**|
-| :---: | :-----------: | :-----------: |
-| 来源 | Java预定义 | 用户自定义 |
-| 储存结构 | 保存在栈stack中 | 引用保存在stack中<br/>原始对象保存在堆heap中 |
-| 复制 | 创建两个不同的变量<br/>赋值地址不同仅仅值相同 | 新的引用指向堆上的同一个地址 |
-| 复制对象修改<br>对原变量影响 | 不受任何影响 | 会受到影响 | 
-| 默认值 | 由其数据类型决定 | null | 
+|  **Properties**  | **Primitive data types**  |          **Object**           |
+|:----------------:|:-------------------------:|:-----------------------------:|
+|        来源        |          Java预定义          |             用户自定义             |
+|       储存结构       |        保存在栈stack中         | 引用保存在stack中<br/>原始对象保存在堆heap中 |
+|        复制        | 创建两个不同的变量<br/>赋值地址不同仅仅值相同 |        新的引用指向堆上的同一个地址         |
+| 复制对象修改<br>对原变量影响 |          不受任何影响           |             会受到影响             | 
+|       默认值        |         由其数据类型决定          |             null              | 

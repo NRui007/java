@@ -22,15 +22,15 @@
 ## 原始数据类型及其包装类
 
 | **Primitive Data Type** | **Wrapper Class** |
-| :----: | :----: |
-| char | Character |
-| byte | Byte |
-| short | Short |
-| int | Integer |
-| long | Long |
-| float | Float |
-| double | Double |
-| boolean | Boolean |
+|:-----------------------:|:-----------------:|
+|          char           |     Character     |
+|          byte           |       Byte        |
+|          short          |       Short       |
+|           int           |      Integer      |
+|          long           |       Long        |
+|          float          |       Float       |
+|         double          |      Double       |
+|         boolean         |      Boolean      |
 
 Examples:
 ```java
@@ -85,22 +85,22 @@ public class WrapperClass {
 
 Output:
 > print primitive data types:  
-char values: a
-boolean values: true
-byte values: 2
-short values: 155
-int i values: 123
-long values: 456
-float values: 3.14
-double values: 5.65
-print wrapper class object
-Character Object: a
-Boolean Object: true
-Byte Object: 2
-Short Object: 155
-Integer Object: 123
-Long Object: 456
-Float Object: 3.14
+char values: a  
+boolean values: true  
+byte values: 2  
+short values: 155  
+int i values: 123  
+long values: 456  
+float values: 3.14  
+double values: 5.65  
+print wrapper class object  
+Character Object: a  
+Boolean Object: true  
+Byte Object: 2  
+Short Object: 155  
+Integer Object: 123  
+Long Object: 456  
+Float Object: 3.14  
 Double Object: 5.65
 
 ## 自动装箱与拆箱 AutoBoxing and UnBoxing

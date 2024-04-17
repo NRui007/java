@@ -11,7 +11,7 @@
 ```java
 public class GFG {
     public static void main(String[] args) {
-        System.out.println("GeekforGeeks");
+        System.out.println("GeekForGeeks");
     }
 }
 ```
@@ -89,12 +89,12 @@ public class GFG {
 
 ### 访问修饰符 Access Modifiers
 
-| Access Modifier |	Within Class  |	Within Package | Outside Package by subclass only |	Outside Package |
-| :---: | :---: | :---: | :---: | :---: |
-| Private | yes | no | no | no |
-| Default | yes | yes | no | no |
-| Protected | yes | yes | yes | no |
-| Public | yes | yes | yes | yes | 
+| Access Modifier | 	Within Class | 	Within Package | Outside Package by subclass only | 	Outside Package |
+|:---------------:|:-------------:|:---------------:|:--------------------------------:|:----------------:|
+|     Private     |      yes      |       no        |                no                |        no        |
+|     Default     |      yes      |       yes       |                no                |        no        |
+|    Protected    |      yes      |       yes       |               yes                |        no        |
+|     Public      |      yes      |       yes       |               yes                |       yes        | 
 
 ## 10. 关键字 Keywords
 
@@ -112,8 +112,8 @@ public class GFG {
 3. 修饰符modifiers(10):
     - access modifiers(3): public, protected, private
     - non-access modifiers(7): final, abstract, static, transient, synchronized, volatile, native
-4. 程序控制语句flow controll in Java(12):
-    - Decision Making(6):
+4. 程序控制语句flow control in Java(12):
+    - Decision-Making(6):
         * if-else: if, else, instanceof
         * switch: switch, case, default
     - Loop(3): for, do, while

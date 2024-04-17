@@ -13,7 +13,7 @@
 class HelloWorld {
     // Your program begins with a call to main().
     // Prints "Hello, World" to the terminal window.
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         System.out.println("Hello, World");
     }
@@ -54,15 +54,15 @@ class HelloWorld {
 main方法是java程序的入口，每一个java应用都要有main方法，这时强制的
 
 ```java
-public static void main(String[] args)
+public static void main(String[] args){}
 ```
 
-> 解释说明: 
-> public: JVM可以从任意地方执行该方法
-> static: 不需要实例化对象即可调用main方法，public和static可以调换位置
-> void: 不需要返回值
-> main(): JVM中定义的入口方法名
-> String[]: 接受参数为字符串数组
+> 解释说明:  
+> public: JVM可以从任意地方执行该方法  
+> static: 不需要实例化对象即可调用main方法，public和static可以调换位置  
+> void: 不需要返回值  
+> main(): JVM中定义的入口方法名  
+> String[]: 接受参数为字符串数组  
 
 ## 3. Inside Statements
 

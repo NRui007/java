@@ -6,5 +6,6 @@ JavaSEProjects/.vscode
 
 JavaSEProjects/JavaSEProjects.iml
 
+*.iml
 
-
+.idea/

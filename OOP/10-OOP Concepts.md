@@ -109,3 +109,25 @@ Definition:
 ## Difference between OOP and Object-based programming
 
 Object-based programming基本拥有OOP的所有特性除了继承，JavaScript和VBScript就是典型的object-based programming language
+
+## Why java is not purely Object-Oriented Programming language
+
+***how to be purely objected-oriented***
+
+1. Encapsulation/Data Hiding  
+2. Inheritance  
+3. Polymorphism  
+4. Abstraction  
+5. All predefined types are objects  
+6. All user defined types are objects  
+7. 对对象的所有操作都必须通过其public方法实现
+
+第一个实现完全面向对象的语言是Smalltalk。~~（虽然俺没听说过）~~
+
+Java满足以上1, 2, 3, 4, 6条特性，但不满足5和7特性：
+1. **Primitive Data Type**:Java中预设好的数据类型包含8中原始数据类型，它们并不是对象
+2. **The static keyword**:通过static修饰的变量或方法，不需要通过对象访问，可以直接使用类访问
+3. **Wrapper class**:
+   - 原始数据封装类可以通过算术运算符直接操作，而不通过调用方法
+   - 另外例如使用Integer代替int进行运算，但在Java内部也会通过拆箱机制将其转为原始数据类型进行计算
+

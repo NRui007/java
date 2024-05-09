@@ -21,7 +21,7 @@ System.out.println在Java中被用来打印传递给其的一个参数
 > 1. **System.in**: 用于从键盘或其他标准输入设备读取字符
 > 2. **System.err**: 用于输出程序可能抛出的错误数据到屏幕或其他标准输出设备
 
-Examples:
+Example:
 ```java
 package io;
 
@@ -65,7 +65,7 @@ if existing errors, please use err stream to print
 - println(String x): 输出字符串 + 换行符
 - println(Object x): 调用x的toString方法并输出该字符串 + 换行符
 
-Examples:
+Example:
 ```java
 package io;
 
@@ -156,7 +156,7 @@ Syntax:
 System.out.println()一般都是被用于输出到控制台，可以通过设置out的属性值进行重定向到其他源  
 而且PrintStream可以用于输出字符到文件
 
-Examples:
+Example:
 ```java
 package io;
 
@@ -238,7 +238,7 @@ Output.log:
 
 日期时间格式化使用更加复杂的格式化标识符
 
-Examples:
+Example:
 ```java
 package io;
 
@@ -311,7 +311,7 @@ Date format: Hours: 17  Minutes: 20 Seconds: 41
 
 ### Using DecimalFormat Class
 
-Examples:
+Example:
 ```java
 package io;
 
@@ -359,7 +359,7 @@ your Formatted Dream Income : $1,123,456.79
 
 ### Using SimpleDateFormat Class
 
-Examples:
+Example:
 ```java
 package io;
 

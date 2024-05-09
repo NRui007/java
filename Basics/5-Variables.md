@@ -54,7 +54,7 @@
 3. 访问限制：只能在变量声明后的代码块内
 4. 初始化：局部变量**强制性**要求**使用前须初始化**
 
-Examples:
+Example:
 ```java
 public class LocalVariable {
     public LocalVariable() {
@@ -86,7 +86,7 @@ public class LocalVariable {
     - **匿名块Instance Block**初始化
 
 
-Examples:
+Example:
 ```java
 public class InstanceVariable {
     // 不同数据类型的实例变量
@@ -113,7 +113,7 @@ public class InstanceVariable {
 7. 静态变量不能在实例方法中**重复声明**，区别与可以在实例方法中声明一个与实例变量相同类型和名称的局部变量
 8. 初始化方式： **静态块Static Block**初始化
 
-Examples：
+Example：
 ```java
 public class StaticVariable {
     // 声明静态变量
@@ -179,7 +179,7 @@ Instance block在Java中被定义为匿名方法，可以在其中创建逻辑�
     - 缺点：无法接收参数
 - 在一个class中如果有多个Instance Block，会从上往下依次执行
 
-Examples：
+Example：
 ```java
 package basics.variable;
 
@@ -222,7 +222,7 @@ num is 50
 > 3. 当前类Instance Block
 > 4. 当前构造器Constructor
 
-Examples：
+Example：
 ```java
 public class InstanceBlockOrder extends ParentClass{
     {
@@ -264,7 +264,7 @@ Static Block的结构是用static关键字修饰的Instance Block，叫做Static
 - 声明位置：定义在类内但是在方法体和构造器外, 且用static关键字修饰
 - 执行时机：只在**类**被第一次加载到内存中时执行一次
 
-Examples:
+Example:
 ```java
 public class StaticBlock {
     static {
@@ -288,7 +288,7 @@ Output:
 2. Instance Block
 3. Constructor
 
-Examples:
+Example:
 ```java
 package basics.variable;
 
@@ -327,7 +327,7 @@ Constructor
 1. subclass Instance Variable hides superclass Instance Variable
 2. local variable hides instance variable
 
-Examples:
+Example:
 ```java
 package basics.variable;
 

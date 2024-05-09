@@ -19,7 +19,7 @@ if (condition) {
 > 经过计算，condition会是一个boolean值，如果其值是true，则“{}”内的代码块会被执行  
 > 如果我们不提供“{}”，那么只有跟在if语句后的一条语句才算在块内
 
-Examples:
+Example:
 ```java
 public class IfDemo {
     public static void main(String[] args) {
@@ -60,7 +60,7 @@ if (condition) {
 > 当condition计算后返回的值是true时，执行if block中的语句，  
 > 否则返回的值是false时，执行else block中的语句
 
-Examples：
+Example：
 ```java
 import java.util.Scanner;
 
@@ -101,7 +101,7 @@ if (condition1) {
 > 一般nested-if语句也就两三层  
 > 过深的嵌套语句会降低效率，需要优化写法
 
-Examples:
+Example:
 ```java
 import java.util.Scanner;
 
@@ -153,7 +153,7 @@ else
 > 2. 当某个条件被允许后，该条件对应的语句块被执行；其他语句块则跳过
 > 3. 一个if语句可以对应多个else-if语句，但只能有一个else语句，也可以没有else语句
 
-Examples:
+Example:
 ```java
 import java.util.Scanner;
 
@@ -249,7 +249,7 @@ How Does a While Loop execute:
 while以判断condition的值为开始来决定是否执行循环体，如果为false就会直接跳过循环，因此while循环也叫做 **entry control loop**  
 另外如果循环体没有被{}包围，那么循环体只是while后续跟着的第一个语句。
 
-Examples:
+Example:
 ```java
 public class WhileDemo {
     public static void main(String[] args) {
@@ -301,7 +301,7 @@ Execution of do-while loop:
 > 5. 如果结果是true,跳转到流程2;结果是false,跳转到流程6
 > 6. 结束do-while循环，执行后续语句
 
-Examples:
+Example:
 ```java
 public class DoWhileDemo {
     public static void main(String[] args) {
@@ -349,7 +349,7 @@ Execution of for loop:
 > 6. 执行updation表达式，更新循环变量，回到流程3
 > 7. 结束for循环，执行后续语句
 
-Examples:
+Example:
 ```java
 public class ForDemo {
     public static void main(String[] args) {
@@ -388,7 +388,7 @@ for (T element: Collection obj/array) {
 }
 ```
 
-Examples:
+Example:
 ```java
 public class EnhanceForDemo {
     public static void main(String[] args) {
@@ -425,7 +425,7 @@ Bob
 - 嵌套循环即在一个循环中存在另外一个循环。  
 - for循环、while循环、do-while循环可以互相组合
 
-Examples:
+Example:
 ```java
 public class NestedDemo {
     public static void main(String[] args) {
@@ -491,7 +491,7 @@ Syntax:
   continue;
 ```
 
-Examples:
+Example:
 ```java
 public class ContinueDemo {
   public static void main(String[] args) {
@@ -695,7 +695,7 @@ return被用于方法的退出或结束，有返回值的或者无返回值两�
 
 有返回值的方法，return后面必须跟着符合返回类型的一个值
 
-Examples:
+Example:
 ```java
 public class ReturnWithValue {
     double sum(double a, double b) {
@@ -715,7 +715,7 @@ Output:
 
 在无返回值的方法中，return语句可以忽略
 
-Examples:
+Example:
 ```java
 public class ReturnWithoutValue {
     void sum(double a, double b) {

@@ -7,7 +7,7 @@
 > - Method：对象的行为方法
 > - Instance Variables: 每个对象独一无二的状态，通过给属性赋值来实现
 
-**Examples:**
+**Example:**
 ```java
 public class GFG {
     public static void main(String[] args) {

@@ -32,7 +32,7 @@
 |         double          |      Double       |
 |         boolean         |      Boolean      |
 
-Examples:
+Example:
 ```java
 package basics.variable;
 
@@ -111,7 +111,7 @@ Double Object: 5.65
     > 包装类自动转换为其对应的原始数据类型叫做拆箱
 
 
-Examples:
+Example:
 ```java
 package basics.variable;
 

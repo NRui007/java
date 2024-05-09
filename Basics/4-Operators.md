@@ -8,7 +8,7 @@
 - \+ ：加法
 - \- ：减法
 
-Examples:
+Example:
 ```java
 public class ArithmeticOperators {
     public static void main(String... args) {
@@ -37,7 +37,7 @@ public class ArithmeticOperators {
     - Post-Decrement Operator: 先自减后使用
 - ! : 逻辑非Logical Not Operator, 用于转换布尔值
 
-Examples:
+Example:
 ```java
 public class AutoCrementOperators {
     public static void main(String[] args) {
@@ -70,7 +70,7 @@ Predecrement : 8
     - /= ：a = a / 5 ===> a /= 5
     - %= ：a = a % 5 ===> a %= 5
 
-Examples: 
+Example: 
 ```java
 public class AssignmentOperators {
     public static void main(String[] args) {
@@ -104,7 +104,7 @@ i %= 2 is 0
 - \>=(大于等于Greater than or equal to): 第一个操作数大于等于第二个操作数返回true，否则false
 - \<=(小于等于Less than or equal to): 第一个操作数小于等于第二个操作数返回true，否则false
 
-Examples:
+Example:
 ```java
 public class RelationalOperators {
     public static void main(String[] args) {
@@ -141,7 +141,7 @@ a != c is true
 > 2. &&和||运算符是二元运算符，!是一元运算符
 > 3. &&和||运算符都会进行**短路运算**
 
-Examples:
+Example:
 ```java
 public class LogicalOperators {
     public static void main(String[] args) {
@@ -200,7 +200,7 @@ i is 10
 > 其中condition返回**boolean**类型的值，当其值是true时，执行if true处语句；当其值时false时，执行if false出的语句
 > 因此，?三元表达式可以看作是一个简略的if-else结构
 
-Examples:
+Example:
 ```java
 public class TernaryOperator {
     public static void main(String[] args) {
@@ -224,7 +224,7 @@ Output:
 - ^(异或): **1 ^ 1 = 0;** 1 ^ 0 = 1; 0 ^ 1 = 1; **0 ^ 0 = 0**
 - ~(非): !1 = 0; !0 = 1
 
-Examples:
+Example:
 ```java
 public class BitwiseOperator {
     public static void main(String[] args) {
@@ -288,7 +288,7 @@ true
 - \>>(算术右移Signed Right Shift Operator): 将2进制层面的数字向右移动，左边空出的位用其**符号位**补充，达到除以2的次方数的效果。正数和零的符号是0，负数是1
 - \>>>(逻辑右移Unsigned Right Shift Operator): 将2进制层面的数字向右移动，左边空出的位用其**0**补充
 
-Examples: 
+Example: 
 ```java
 public class ShiftOperators {
     public static void main(String[] args) {
@@ -335,7 +335,7 @@ Output:
 
 **instanceof被用来判断一个对象是不是某一类，某个子类或者接口实现**
 
-Examples: 
+Example: 
 ```java
 public class InstanceofOperator {
     public static void main(String[] args) {
@@ -405,7 +405,7 @@ cat instanceof Object is true
 | ?: | **从右向左** |
 | =、+=、-=、/=、%=、<br>&=、\|=、^=、<<=、>>=、>>>= | **从右向左** |
 
-Examples:
+Example:
 ```java
 public class ComputationOrder {
     public static void main(String[] args) {
@@ -431,7 +431,7 @@ a+b*d-e/f = 219
 
 因为+运算符既可以用做加法，也可以用来拼接字符串，当它们混合使用时可能会产生意外的情况
 
-Examples:
+Example:
 ```java
 public class ComplexPlusOperator {
     public static void main(String[] args) {
@@ -457,7 +457,7 @@ Output:
 
 编译器使用词法工具拆解代码语句。某些情况我们认为可以成功的语句，编译器会编译失败
 
-Examples:
+Example:
 ```java
 public class CompilerErrorOperator {
     public static void main(String[] args) {

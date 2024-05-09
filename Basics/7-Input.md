@@ -13,7 +13,7 @@
 
 BufferedReader被用于读取字符串。它有一个简单函数用于读取单个字符，另一个读取字符串以及一个 **readLine()** 函数读取一行.
 
-Examples:
+Example:
 ```java
 package io;
 
@@ -90,7 +90,7 @@ InputStreamReader能够将字节流转换为字符流，因此BufferedReader能�
   > 一旦流被关闭，之后的mark()、read()、ready()、reset()和skip()操作将会抛出异常  
   > 关闭一个已经被关闭的流不会有任何影响
 
-Examples:
+Example:
 ```java
 package io;
 
@@ -174,7 +174,7 @@ Scanner类能够获取Java的标准输入流，因此需要一些方法从流中
 - nextLong():
 - nextShort():
 
-Examples:
+Example:
 ```java
 package io;
 
@@ -223,7 +223,7 @@ Married: false
 有时，我们还需要判断读取的下一个值是不是我们需要的值或者是否输入已经结束.  
 与nextXYZ()相似，有着haxNextXYZ()的方法来判断下一个值。
 
-Examples:
+Example:
 ```java
 package io;
 
@@ -269,7 +269,7 @@ public class GetAverage {
 3. BufferedReader处理速度更快，因为Scanner做了后处理，需要解析数据类型，而BufferedReader只是简单读取了字符串
 4. 在读取方式上也有着不同，如下
 
-Examples:
+Example:
 ```java
 package io;
 
@@ -305,7 +305,7 @@ Output2:
 > 因此在nextXXX()方法后如果跟上nextLine()方法，如果想要合理生效，可以额外增加一个nextLine()方法去消费换行符进行下一行输入  
 > nextXXX()包括next(),nextByte(),nextShort(),nextInt(),nextLong(),nextFloat(),nextDouble(),nextBoolean()
 
-Examples:
+Example:
 ```java
 package io;
 
@@ -354,7 +354,7 @@ You have entered 10 and idea
 3. 能够使用格式化字符串语法
 4. 不能再非交互环境中(例如IDE)使用
 
-Examples:
+Example:
 ```java
 package io;
 
@@ -393,7 +393,7 @@ Input and Output:
 
 通过main方法从console传入参数，都已String格式接收，如果需要其他类型数据再进行转换
 
-Examples:
+Example:
 ```java
 package io;
 

@@ -85,3 +85,7 @@ public int max(int a, int b) {
 3. 当方法调用结束后，该栈帧将会被删除
 
 存在一个栈指针寄存器会跟踪栈顶并进行调整
+
+### Passing Parameters to a method
+
+Java使用严格的**值传递**进行参数传递

@@ -28,6 +28,16 @@ abstract class Bike {
 }
 ```
 
+### Abstract Method
+
+abstract修饰符用于修饰方法时，不可以与以下修饰符连用：
+1. final
+2. native
+3. synchronized
+4. static
+5. private
+6. strict
+
 ## Interface
 
 - interface是类的蓝本。它只有静态常量和抽象方法

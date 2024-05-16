@@ -81,6 +81,48 @@ Multilevel Inheritance指的是：
 > 类A继承类B，而类B又是类C的子类  
 > 类C是base class，类B是intermediatory class，类C是derived class
 
+在多级继承中主要注意的是：
+> 在Java中，子类不允许直接访问Grandparent的成员和方法，只能访问父类的成员和方法。  
+> 对比C++中，可以通过(::)运算符访问在继承中任意层级的类成员方法
+
+Example:
+```java
+class GrandParent {
+    void fun() {
+        System.out.println("This is grandparent");
+    }
+}
+
+class Parent extends GrandParent {
+    void fun() {
+        super.fun();
+        System.out.println("This is parent");
+    }
+}
+
+class subClass extends Parent {
+    void fun() {
+        // 编译报错
+        // super.super.fun();
+
+        // 只能调用直接父类的方法和成员，不能直接访问间接父类的成员和方法
+        super.fun();
+        System.out.println("This is child");
+    }
+}
+
+public class MultilevelInheritance {
+    public static void main(String[] args) {
+        new subClass().fun();
+    }
+}
+```
+
+Output:
+> This is grandparent  
+This is parent  
+This is child
+
 ### 3. Hierarchical Inheritance
 
 Hierarchical Inheritance指的是：
@@ -163,4 +205,122 @@ Inheritance就代表着IS-A关系：
 - Inheriting constructor: 子类能够继承父类的属性、方法、nested classes,但不能继承构造器，不过可以调用父类构造器
 - Private member inheritance: 子类不能继承父类的private成员
 
-    
+# Instanceof Operator
+
+- instanceof运算符简单来讲就是判断某一对象是不是某种特定类型(class、subclass、interface)
+- 在继承中，子类类型的对象也是父类类型
+- 如果对象是null，那么instanceof的运算结果是false
+
+Example:
+```java
+class Animal {}
+
+class Dog extends Animal {}
+
+public class InstanceofInheritance {
+    public static void main(String[] args) {
+        Animal a = new Dog();
+        System.out.println(a instanceof Animal);
+        System.out.println(a instanceof Dog);
+
+        Dog b = new Dog();
+        System.out.println(b instanceof Animal);
+        System.out.println(b instanceof Dog);
+
+        Animal c = new Animal();
+        System.out.println(c instanceof Animal);
+        System.out.println(c instanceof Dog);
+
+        Dog d = null;
+        System.out.println(d instanceof Animal);
+        System.out.println(d instanceof Dog);
+    }
+}
+```
+
+Output:  
+> true  
+true  
+true  
+true  
+true  
+false  
+false  
+false
+
+Explanation:
+> 1. 对象a虽然是Animal类型的引用，但是它实际指向的对象是Dog实例，因此其既符合Animal类型又符合Dog类型
+> 2. 对象b直接是Dog类型的引用，因此其是Dog类型，自然也是Animal类型
+> 3. 对象c是Animal类型的引用，其实际指向的对象也是Animal，因此其是Animal类型，但是并不一定是Dog类型，也有可能是Cat、Monkey之类的
+> 4. 对象d虽然是Dog类型的引用，但是其值是null，并没有指向任何对象，因此其任何类型都不是
+
+从上述例子我们可以看到可以用Animal类型的引用指向Dog类型，那么我们可不可以将其还原为Dog类型的引用呢？
+
+## DownCasting
+
+当子类类型指向父类对象时就叫做DownCasting:
+- 如果直接这么使用，那么就会产生编译器报错
+  > Dog e = new Animal();
+- 需要通过强制类型转换，才能做到DownCasting，但是这种情况下可能在运行时抛出ClassCastException
+  > Dog f = (Dog) new Animal();
+- 也可以通过提前使用instanceof，规避这种情况
+
+Example:
+```java
+class Animal {}
+
+class Dog extends Animal {
+    static void cast(Animal animal) {
+        if (animal instanceof Dog) {
+            Dog dog = (Dog) animal;
+            System.out.println("The animal is a dog");
+        } else {
+            System.out.println("The animal is probably not a dog");
+        }
+    }
+}
+
+public class DownCastWithInstanceof {
+    public static void main(String[] args) {
+        Animal a1 = new Dog();
+        Dog.cast(a1);
+
+        Animal a2 = new Animal();
+        Dog.cast(a2);
+    }
+}
+```
+
+Output:
+> The animal is a dog  
+The animal is probably not a dog
+
+Example:
+```java
+class Animal {}
+
+class Dog extends Animal {
+    static void convert(Animal animal) {
+        try {
+            Dog dog = (Dog) animal;
+            System.out.println("The animal is a dog");
+        } catch (ClassCastException e) {
+            System.out.println("The animal is probably not a dog");
+        }
+    }
+}
+
+public class DownCastWithoutInstanceof {
+    public static void main(String[] args) {
+        Animal a1 = new Animal();
+        Dog.convert(a1);
+        Animal a2 = new Dog();
+        Dog.convert(a2);
+    }
+}
+```
+
+Output:
+> The animal is probably not a dog  
+The animal is a dog
+

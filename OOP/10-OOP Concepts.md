@@ -100,6 +100,13 @@ Definition:
 > 它也代表一个对象包含另一个对象作为其状态的一部分的关系，但这另一个对象不能脱离源对象而独立存在，它是一种强关系
 > 如果删除父对象，那么子对象将会自动删除
 
+### Relationship of Association, Aggregation and Composition
+
+- Aggregation和Composition都是Association的特殊形式
+- Aggregation代表的是Has-A的关系，实体之间可以相互独立存在
+- Composition又是Aggregation的一种特殊形式，代表的part-of的关系，实体之间互相依赖，不能独立存在
+- 因此 Composition < Aggregation < Association
+
 ## Advantage of OOPs over Procedure-oriented programming language
 
 1. 比起面向过程编程，面向对象编程可以使开发和维护更加方便
